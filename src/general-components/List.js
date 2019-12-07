@@ -15,10 +15,18 @@ function List(props) {
     )
   );
   return (
-    <div className="List-cards">
-      <header>{props.header}</header>
-      {arr}
-    </div>
+    <section className="List">
+      <header className="List-header">
+        <h2>{props.header}</h2>
+      </header>
+      <div className="List-cards">
+        {arr}
+        <button type="button" class="List-add-button">
+          + Add Random Card
+        </button>
+      </div>
+    </section>
+    
   );
 }
 

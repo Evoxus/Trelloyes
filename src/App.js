@@ -10,9 +10,14 @@ function App(props) {
     arr.push(<List header={item.header} cardIds={item.cardIds} cardInfo={STORE.allCards}/>)
   );
   return (
-    <div className="App">
-      {arr}
-    </div>
+    <main className="App">
+      <header className="App-header">
+        <h1>Trelloyes!</h1>
+      </header>
+      <div className="App-list">
+        {arr}
+      </div>
+    </main>
   );
 }
 
