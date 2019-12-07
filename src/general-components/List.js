@@ -1,10 +1,11 @@
-import react from "React";
-import card from "./Card";
+import React from 'react';
+import Card from "./Card";
+import './List.css';
 
 function List(props) {
-  const cardInfo = props.allCards;
+  const cardInfo = props.cardInfo;
   const arr = [];
-  const cardData = props.cardIds.forEach(item =>
+  props.cardIds.forEach(item =>
     arr.push(
       <Card
         title={cardInfo[item].title}
