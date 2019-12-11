@@ -1,27 +1,21 @@
 import React from 'react';
+import STORE from '../store'
 import Card from "./Card";
 import './List.css';
 
 function List(props) {
-  const cardInfo = props.cardInfo;
-  const arr = [];
-  props.cardIds.forEach(item =>
-    arr.push(
-      <Card
-        title={cardInfo[item].title}
-        content={cardInfo[item].content}
-        key={cardInfo[item].id}
-      />
-    )
-  );
+  const allCards = STORE.allCards
+  const arr = props.data.cardIds.map(item => {
+    return <Card key={props.data.id} data={allCards[item]} />
+  });
   return (
-    <section className="List">
+    <section className="List" key={props.id}>
       <header className="List-header">
-        <h2>{props.header}</h2>
+        <h2>{props.data.header}</h2>
       </header>
       <div className="List-cards">
         {arr}
-        <button type="button" class="List-add-button">
+        <button type="button" className="List-add-button">
           + Add Random Card
         </button>
       </div>

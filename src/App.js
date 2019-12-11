@@ -5,9 +5,8 @@ import STORE from "./store";
 import './App.css'
 
 function App(props) {
-  const arr = [];
-  Store.lists.forEach(item =>
-    arr.push(<List header={item.header} cardIds={item.cardIds} cardInfo={STORE.allCards}/>)
+  const arr = Store.lists.map(item =>
+    <List key={item.id} data={item} />
   );
   return (
     <main className="App">
