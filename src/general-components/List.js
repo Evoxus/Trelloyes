@@ -1,13 +1,14 @@
-import React from 'react';
-import STORE from '../store'
+import React from "react";
 import Card from "./Card";
-import './List.css';
+import "./List.css";
+import STORE from "../store";
 
 function List(props) {
-  const allCards = STORE.allCards
+  const allCards = STORE.allCards;
   const arr = props.data.cardIds.map(item => {
-    return <Card key={props.data.id} data={allCards[item]} />
+    return <Card data={allCards[item]} key={item} />;
   });
+
   return (
     <section className="List" key={props.id}>
       <header className="List-header">
@@ -20,7 +21,6 @@ function List(props) {
         </button>
       </div>
     </section>
-    
   );
 }
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<List /> Matches snapshot 1`] = `
+exports[`<list/> matches snap shot 1`] = `
 <section
   className="List"
 >
