@@ -8,7 +8,7 @@ exports[`<List /> Matches snapshot 1`] = `
     className="List-header"
   >
     <h2>
-      Third list
+      First list
     </h2>
   </header>
   <div
@@ -39,36 +39,6 @@ exports[`<List /> Matches snapshot 1`] = `
       </button>
       <h3>
         Second card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Third card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Fourth card
       </h3>
       <p>
         lorem ipsum
@@ -128,52 +98,7 @@ exports[`<List /> Matches snapshot 1`] = `
         delete
       </button>
       <h3>
-        Eighth card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Ninth card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
         Tenth card
-      </h3>
-      <p>
-        lorem ipsum
-      </p>
-    </div>
-    <div
-      className="Card"
-    >
-      <button
-        type="button"
-      >
-        delete
-      </button>
-      <h3>
-        Eleventh card
       </h3>
       <p>
         lorem ipsum
