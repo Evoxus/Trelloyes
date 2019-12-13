@@ -4,7 +4,7 @@ import STORE from "./store";
 import "./App.css";
 
 function App(props) {
-  const arr = STORE.lists.map(item => <List data={item} key={item.id} />);
+  const arr = STORE.lists.map(item => <List data={item} key={item.id} allCards={STORE.allCards} />);
   return (
     <main className="App">
       <header className="App-header">

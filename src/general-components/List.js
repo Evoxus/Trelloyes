@@ -1,12 +1,10 @@
 import React from "react";
 import Card from "./Card";
 import "./List.css";
-import STORE from "../store";
 
 function List(props) {
-  const allCards = STORE.allCards;
   const arr = props.data.cardIds.map(item => {
-    return <Card data={allCards[item]} key={item} />;
+    return <Card data={props.allCards[item]} key={item} />;
   });
 
   return (
