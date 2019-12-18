@@ -8,13 +8,14 @@ function List(props) {
   });
 
   return (
-    <section className="List" key={props.id}>
+    <section className="List" key={props.data.id}>
       <header className="List-header">
         <h2>{props.data.header}</h2>
       </header>
       <div className="List-cards">
         {arr}
-        <button type="button" className="List-add-button">
+        <button type="button" className="List-add-button"
+        onClick={() => props.newRandomCard(props.data.id)}>
           + Add Random Card
         </button>
       </div>
